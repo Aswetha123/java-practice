@@ -1,0 +1,20 @@
+class helloworls{
+    public static void main(String args[]){
+        int arr[][]={{2,2,3},{2,2,3},{3,2,2}};
+        int c=arr.length;
+        int r=arr[0].length;
+        int i=0;
+        int j=0;
+        boolean isvalid=true;
+        while(i<r && j<c){
+            if(arr[i][j]!=2){
+                isvalid=false;
+            }
+            //System.out.println(arr[i][j]);
+            i++;
+            j++;
+        }
+        System.out.println(isvalid);
+        
+    }
+}
